@@ -1,0 +1,185 @@
+/*Colors*/
+/*Fonts*/
+/*Font Sizes*/
+/*Space Sizes*/
+/*General Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(#0E0149 30%, black);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Scrollbar*/
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: blueviolet;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/*Header and Body*/
+.home-body {
+  background-image: linear-gradient(#0E0149 30%, black);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.home-body .header-home {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-image: radial-gradient(circle at bottom, #FDB703 10%, #e76f51 30%, #f25c54 60%);
+}
+.home-body .header-home h1 {
+  font-family: "Monoton", cursive;
+  padding-left: 10px;
+  font-size: clamp(1.94rem, 1.62rem + 1.83vw, 2.93rem);
+  display: inline;
+}
+.home-body .header-home .birds {
+  width: clamp(4.5rem, 3.03rem + 8.37vw, 9rem);
+  margin-top: 1%;
+  margin-right: 1%;
+  filter: invert(1);
+  float: right;
+}
+
+.waves {
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.wavesbig {
+  display: none;
+}
+
+.fish {
+  width: clamp(4.5rem, 3.03rem + 8.37vw, 9rem);
+  margin-top: 50px;
+  margin-right: 10vw;
+  float: right;
+  opacity: 0.5;
+}
+
+/*Page Links*/
+.home {
+  width: 70%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+.home a {
+  text-decoration: none;
+  color: #EBEBEB;
+  font-family: "Concert One", cursive;
+  transition: 0.3s ease-out;
+}
+.home a:hover {
+  text-shadow: 0 0 7px white, 0 0 42px #19C8C5, 0 0 82px #19C8C5;
+}
+.home h1 {
+  font-size: clamp(1.62rem, 1.38rem + 1.35vw, 2.34rem);
+}
+
+.home-link {
+  margin-left: 0;
+  padding: 20px;
+}
+
+.home-link2 {
+  margin-left: 20%;
+  padding: 20px;
+}
+
+.home-link3 {
+  margin-left: 40%;
+  padding: 20px;
+}
+
+.home-link4 {
+  margin-left: 60%;
+  padding: 20px;
+}
+
+@media (max-width: 420px) {
+  .home-body .header-home {
+    height: 100px;
+  }
+  .home-body .header-home h1 {
+    font-size: clamp(1.35rem, 1.15rem + 1.02vw, 1.88rem);
+  }
+
+  .fish {
+    width: clamp(3.38rem, 2.52rem + 4.88vw, 6rem);
+    margin-top: 30px;
+    margin-right: 5vw;
+  }
+}
+@media (min-width: 600px) {
+  .waves {
+    display: none;
+  }
+
+  .wavesbig {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+
+  .home {
+    margin-left: 15vw;
+    margin-right: 10vw;
+  }
+}
+@media (min-width: 1000px) {
+  .home-body .header-home {
+    height: 200px;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+footer .foot {
+  display: flex;
+  align-items: center;
+  filter: invert(100%);
+  padding: 40px;
+  /*&:hover {
+      background-image: radial-gradient(rgba(253, 255, 253, 0.8) 15%, rgba(14, 186, 248, 0.5), black 60%);
+      filter: none;
+  }*/
+}
+footer .angler {
+  width: 100px;
+  padding: 10px;
+}
+footer .social {
+  width: 30px;
+  padding: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

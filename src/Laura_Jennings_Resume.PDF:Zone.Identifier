@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://www.myperfectresume.com/dashboard
+HostUrl=https://www.myperfectresume.com/eb/api/v2/documents/download?userId=75fdb508-f9d3-4727-bb7e-f4fb288b6198&documentId=f25f0cc3-854b-4a9f-88f0-9d51e33377d5&portalId=16&fileFormatType=PDF&docFileType=eXPT&styleSheetName=RbtoHtml2&skipCacheCheck=false&isPrint=false&templateName=original&sendDownloadEvent=true&request={%22isAgent%22:false,%22eventType%22:%22download%22,%22productCD%22:%22RWZ%22,%22eventDetails%22:[{%22name%22:%22screen%20name%22,%22value%22:%22dashboard%22}]}&documentName=Laura_Jennings_Resume
