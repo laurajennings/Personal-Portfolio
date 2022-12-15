@@ -73,7 +73,8 @@ nav ul a {
   font-family: "Carter One", cursive;
 }
 nav ul a:hover {
-  background-color: #172226;
+  background-color: #F46E66;
+  font-weight: bold;
 }
 nav .menu {
   clear: both;
@@ -121,7 +122,11 @@ nav .menu-btn:checked ~ .menu {
 
 /*Nav Desktop*/
 @media (min-width: 700px) {
+  nav {
+    height: 64px;
+  }
   nav li {
+    height: 64px;
     float: left;
   }
   nav li a {
@@ -154,9 +159,9 @@ nav .menu-btn:checked ~ .menu {
   flex-wrap: wrap;
   margin: 30px;
 }
-.about div {
+.about section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .about .about-text {
   margin: 20px;
@@ -164,6 +169,23 @@ nav .menu-btn:checked ~ .menu {
   border: 2px dashed #19C8C5;
   padding: 15px;
   border-radius: 10px;
+}
+.about .about-text ul {
+  padding: 10px;
+  text-align: center;
+  z-index: 3;
+}
+.about .about-text ul li {
+  border-radius: 6px;
+  display: inline-block;
+  font-family: "Carter One", cursive;
+  background: #19C8C5;
+  color: black;
+  padding: 5px 10px;
+  margin: 2px;
+}
+.about .about-text ul li:nth-child(odd) {
+  background: #90E0EF;
 }
 
 /*About Desktop*/
@@ -384,4 +406,6 @@ footer .social {
   width: 30px;
   padding: 5px;
   cursor: pointer;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -18,6 +18,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  bottom: 0;
 }
 
 /*Scrollbar*/
@@ -157,12 +158,18 @@ body::-webkit-scrollbar-thumb {
     height: 200px;
   }
 }
+footer::before {
+  content: "";
+  position: absolute;
+}
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: auto;
+  position: relative;
 }
 footer .foot {
   display: flex;
@@ -182,4 +189,6 @@ footer .social {
   width: 30px;
   padding: 5px;
   cursor: pointer;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

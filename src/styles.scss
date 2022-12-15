@@ -95,7 +95,8 @@ nav {
             text-decoration: none;
             font-family: $main2;
             &:hover {
-                background-color: #172226;
+                background-color: #F46E66;
+                font-weight: bold;
             }
         }
     }
@@ -148,7 +149,9 @@ nav {
 
 @media (min-width: 700px) {
     nav {
+        height: 64px;
         li{
+            height: 64px;
             float: left;
             a {
                 padding: 20px 30px;
@@ -187,19 +190,36 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     margin: 30px;
-    div {
+    section {
         display: flex;
-        flex-direction: column;
-
+        flex-direction: row;
     }
     .about-text {
         margin: 20px;
         background-color: #172226;
         border: 2px dashed $neautral3;
         padding: 15px;
-        border-radius: 10px;
+        border-radius: 10px; 
+        ul {
+            padding: 10px;
+            text-align: center;
+            z-index: 3;
+            li {
+                border-radius: 6px;
+                display: inline-block;
+                font-family: $main2;
+                background: $neautral3;
+                color: black;
+                padding: 5px 10px;
+                margin: 2px;
+            }
+            li:nth-child(odd) {
+                background: $primary1;
+            }
+        }
     }
 }
+
 
 /*About Desktop*/
 
