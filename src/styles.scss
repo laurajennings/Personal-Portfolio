@@ -54,6 +54,30 @@ body {
         font-family: $main6;
         font-size: $size-1;
     }
+    a {
+        padding-top: 30px;
+        font-family: $main2;
+        color: $neautral2;
+        transition: .3s ease-out;
+        text-decoration: none;
+        &:hover {
+            color: white;
+        text-shadow: 
+            0 0 7px white,
+            0 0 10px white,
+            0 0 21px white,
+            0 0 42px $neautral2,
+            0 0 82px $neautral2,
+            0 0 92px $neautral2,
+            0 0 102px $neautral2,
+            0 0 151px $neautral2,
+        }    
+    }
+    .work-link {
+        font-size: $size7;
+        text-decoration: none;
+        color: $neautral2;
+    }
 }
 
 /*Scrollbar*/

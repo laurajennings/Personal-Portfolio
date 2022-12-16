@@ -29,6 +29,22 @@ body p {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: clamp(0.94rem, 0.85rem + 0.49vw, 1.2rem);
 }
+body a {
+  padding-top: 30px;
+  font-family: "Carter One", cursive;
+  color: #7F32C3;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+}
+body a:hover {
+  color: white;
+  text-shadow: 0 0 7px white, 0 0 10px white, 0 0 21px white, 0 0 42px #7F32C3, 0 0 82px #7F32C3, 0 0 92px #7F32C3, 0 0 102px #7F32C3, 0 0 151px #7F32C3;
+}
+body .work-link {
+  font-size: clamp(4.03rem, 3.02rem + 5.81vw, 7.15rem);
+  text-decoration: none;
+  color: #7F32C3;
+}
 
 /*Scrollbar*/
 body::-webkit-scrollbar {
