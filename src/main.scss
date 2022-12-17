@@ -53,7 +53,7 @@ body::-webkit-scrollbar {
     width: 0.5rem;
 }
 body::-webkit-scrollbar-track {
-    background: blueviolet;
+    background: $primary1;
 }
 body::-webkit-scrollbar-thumb {
     background: black;
@@ -98,13 +98,6 @@ body::-webkit-scrollbar-thumb {
     display: none;
 }
 
-.fish {
-    width: $space-2xl-3xl;
-    margin-top: 50px;
-    margin-right: 10vw;
-    float: right;
-    opacity: 0.5; 
-}
 
 /*Page Links*/ 
 

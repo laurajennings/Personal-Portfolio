@@ -216,7 +216,7 @@ nav {
     margin: 30px;
     section {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .about-text {
         margin: 20px;
@@ -249,7 +249,7 @@ nav {
 
 @media (min-width: 800px) {
     .about {
-        div {
+        section {
         flex-direction: row;
         }
     }

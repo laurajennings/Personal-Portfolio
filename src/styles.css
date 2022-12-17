@@ -177,7 +177,7 @@ nav .menu-btn:checked ~ .menu {
 }
 .about section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .about .about-text {
   margin: 20px;
@@ -206,7 +206,7 @@ nav .menu-btn:checked ~ .menu {
 
 /*About Desktop*/
 @media (min-width: 800px) {
-  .about div {
+  .about section {
     flex-direction: row;
   }
 }
