@@ -239,7 +239,7 @@ nav .menu-btn:checked ~ .menu {
 }
 .main-work .school {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .main-work section {
   margin: 20px;
@@ -258,8 +258,8 @@ nav .menu-btn:checked ~ .menu {
   padding: 30px;
   left: 0;
   top: 0;
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
 }
 .main-work .resume a {
   padding-top: 30px;
@@ -283,10 +283,17 @@ nav .menu-btn:checked ~ .menu {
 
 .jelly {
   filter: invert(24%) sepia(97%) saturate(2154%) hue-rotate(260deg) brightness(78%) contrast(95%);
+  transform: rotate(65deg);
   height: 20vh;
-  margin-top: 5vh;
+  margin-top: 7vh;
+  position: absolute;
 }
 
+@media (max-width: 465px) {
+  .jelly {
+    display: none;
+  }
+}
 /*Work Desktop*/
 @media (min-width: 1000px) {
   .main-work {
@@ -301,10 +308,25 @@ nav .menu-btn:checked ~ .menu {
   .main-work .projects h1 {
     margin-top: 2em;
   }
+  .main-work .school {
+    flex-direction: row;
+    align-items: center;
+  }
+  .main-work .school h1 {
+    margin: 0;
+  }
+  .main-work div video {
+    padding: 30px;
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 50%;
+  }
   .jelly2 {
     margin: 1em;
   }
   .jelly {
+    position: relative;
     margin: 1em;
   }
 }

@@ -286,7 +286,7 @@ nav {
     }
     .school {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     section {
         margin: 20px;
@@ -304,8 +304,8 @@ nav {
             padding: 30px;
             left: 0;
             top: 0;
-            height: 50%;
-            width: 50%;
+            height: 100%;
+            width: 100%;
         }
     }
     .resume {
@@ -341,8 +341,16 @@ nav {
 
 .jelly {
     filter: invert(24%) sepia(97%) saturate(2154%) hue-rotate(260deg) brightness(78%) contrast(95%);
+    transform: rotate(65deg);
     height: 20vh;
-    margin-top: 5vh;
+    margin-top: 7vh;
+    position: absolute;
+}
+
+@media (max-width: 465px){
+    .jelly {
+        display: none;
+    }
 }
 
 /*Work Desktop*/
@@ -361,11 +369,28 @@ nav {
             margin-top: 2em;
             
         }
+        .school {
+            flex-direction: row;
+            align-items: center;
+            h1 {
+                margin: 0;
+            }
+        }
+        div {
+            video {
+                padding: 30px;
+                left: 0;
+                top: 0;
+                height: 50%;
+                width: 50%;
+            }
+        }
     }
     .jelly2 {
         margin: 1em;
     }
     .jelly {
+        position: relative;
         margin: 1em;
     }
 }
