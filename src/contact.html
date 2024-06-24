@@ -21,12 +21,13 @@
             </nav>
         </header>
         <main>
-            <form class="contact"> 
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact"> 
                 <h1>Contact Me</h1>
-                <input type="text" class="feild" placeholder="Your Name">
-                <input type="email" class="feild" placeholder="Your Email">
-                <input type="text" class="feild" placeholder="Your Phone">
-                <textarea class="feild" placeholder="Message"></textarea>
+                <input type="hidden" name="access_key" value="609fea37-68ef-48d5-a252-7b89ed219128">
+                <input type="text" name="name" class="feild" placeholder="Your Name" required>
+                <input type="email" name="email" class="feild" placeholder="Your Email" required>
+                <input type="text" name="phone"class="feild" placeholder="Your Phone">
+                <textarea name="message" class="feild" placeholder="Message" required></textarea>
                 <button type="submit" class="submit">Submit</button>
             </form>
         </main>
